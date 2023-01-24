@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>I'm</title>
+</head>
+<style>
+	body
+	{
+		margin-left: 15px;
+			margin-right: 15px;
+
+	}
+	
+		.content
+		{
+			background-color: lightslategrey;
+			margin-left: 20px;
+			margin-right: 20px;
+			border-radius: 10px;
+			padding-top: 40px;
+			padding-bottom: 30px;
+			padding-left: 20px;
+			box-shadow: 20px 0 25px rgba(0, 0, 0, 0.5);
+		}
+		.row{
+			display: flex;
+			column-gap: 20px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.column
+		{
+			flex: 50%;
+			padding: 0px;
+			height: 100%;
+			width: 25%;
+			column-gap: 20px;
+			padding-left: 80px;
+			padding-right: 150px;
+		}
+			.column span
+		{
+			font-size: 80px;
+			color: lightyellow;
+			font-family: sans-serif arial;
+		}
+		.about
+		{
+			 margin-left: 40px;
+			  margin-right: 40px;
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  padding: 60px 60px 20px;
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+		}
+		.project
+		{
+			background-color: lightslategrey;
+			margin-left: 20px;
+			margin-right: 20px;
+			border-radius: 10px;
+			padding-top: 40px;
+			padding-bottom: 30px;
+			padding-left: 20px;
+			box-shadow: 20px 0 25px rgba(0, 0, 0, 0.5);
+		}
+		.pro1
+		{
+			background-color:  #A0A0A0;
+			margin-left: 80px;
+			margin-right: 80px;
+			border-radius: 0px 90px 90px 0px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			box-shadow: 20px 0 25px rgba(0, 0, 0, 0.5);
+		}
+		.pro2
+		{
+			background-color: #A0A0A0;
+			margin-left: 80px;
+			margin-right: 80px;
+			border-radius: 90px 0px 0px 90px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.5);
+		}
+		.img
+		{
+			box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.5);
+		}
+		.footer
+		{
+			color: lightyellow;
+			background-color: #404040;
+			padding: 30px;
+		}
+		hr
+		{
+			border: none;
+			height: 20px;
+			height: 50px;
+			border-bottom: 1px solid #1f1209;
+			box-shadow: 0 20px 20px -20px #333;
+			margin: -50px auto 10px;
+		}
+		.image
+		{
+			background-image: url(im.jpg);
+		}
+		.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.top-right
+{
+position: absolute;
+top: 8px;
+right: 16px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: lightyellow;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.skill
+{
+	background-color: lightslategrey;
+			margin-left: 80px;
+			margin-right: 80px;
+			border-radius: 10px;
+			padding-top: 40px;
+			padding-bottom: 30px;
+			padding-left: 20px;
+			box-shadow: 20px 0 25px rgba(0, 0, 0, 0.5);
+	
+}</style>
+<body>
+	<br>
+<br>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#me">About</a>
+  <a href="#sk">Skills</a>
+  <a href="#ac">Achievements</a>
+  <a href="#pro">Projects</a>
+  <a href="#in">Interests</a>
+  <a href="#cu">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer;font-family:lucida handwriting; margin-left: 40px; " onclick="openNav()">&#9776;<b style="color: red;"><i> I'm...</i></b></span>
+<!--<section id="me">
+<div class="content">
+	<div class="row">
+			<div class="column left">
+					<span>LET US<br> FOCUS ON CAREER!!!!</span>
+					<p style="color: yellow;">I start to feeding knowlegde <b><i>MYSELF..</i></b></p>
+					<a href="#me" style="text-decoration: none;color: whitesmoke;">See about me below</a>
+			</div>
+			<div class="column right">
+					<img src="me.png" width="500" height="450">
+					<a style="float: right; text-decoration: none;color: whitesmoke; margin-right: 180px; ">Yaxsha Paul</a>
+			</div>
+	</div>
+</div>-->
+<br>
+<br><section id="me">
+		<center>
+			<img src="me.png" style="border-radius: 100%; width: 150px; border: 1px solid #A0A0A0; -webkit-border-radius:500px; -moz-border-radius:500px; box-shadow: grey 10px 10px 10px;">
+			<h2><b style="text-shadow: 2px 2px 2px grey;"><i>Hi, I'm Yaxshapraba,</i></b></h2>
+			<i>Pursuing final year of <b>B.Sc Information Technology</b> at Sree Saraswathi Thayagaraja College(Autonomous),Pollachi,Coimbatore,TN-India.</i>
+			<br><br>
+			<hr width="80%">
+			<span><p style="background-color: lightslategrey; width:30%; padding: 20px; border-radius: 10px; font-family: bold; color: lightyellow; font-size: 20px;"><i>STARVE your Distractions FEED your Focus!!!</i></p></span>
+			<hr width="80%">
+			<br>
+			<div class="about">
+		<span style="font-size: 18px;"><i style="color:red; font-size:20px;">"Learner can learn everything." </i><i>but, what about what they done?<br>
+		Yeah, This is a question, which prompt me to do something which I have learned.<b></i></span><br><br>
+		<span style="font-size: 18px;"><i><b>Well, I proud to say this, I'm learning Software development and I done couple of projects on that. I've mention it below.<br>
+			And I'm the Secretary of Eclat Developers of Information Technology at College. Apart from my academics, I well-versed in tailoring too.
+			</b></i></span>
+		<br><br><img src="im.jpg" width="100%" height=500 style="border-radius: 10px;">
+		</center>
+	</div></section>
+	<br>
+	<br>
+	
+	</div>
+	<section id="sk">
+	<br><hr width="80%"><br>
+	<div class="skill">
+		<center>
+		
+			<h2>	<i><b>I've Technical knowledge, </b></i></h2>
+			<span><i>C programming(50%)</i></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><i>C++ programming(50%)</i></span><br><br>
+			<span><i>PHP programming(75%)</i></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><i>Python Programming(40%)</i></span><br><br>
+			<span><i>HTML(100%)</i></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><i>CSS(75%)</i></span><br><br>
+			<span><i>MySQL(75%)</i></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span><i>Javascript(25%)</i></span><br><br>
+			</div>
+		</div>
+		</center>
+	</div></div></section>
+	<br><hr width="80%" style=" box-shadow: 20px;">
+	<section id="ac">
+		<center>
+	<h2><i>I got below certificates through online,</i></h2>
+				<img src="img.jpg" width="300" height="200" class="img">&nbsp&nbsp
+				<img src="img9.jpg" width="300" height="200" class="img">&nbsp&nbsp
+				<img src="img6.jpg" width="300" height="200" class="img"><br><br>
+				<img src="img1.jpg" width="300" height="200" class="img">&nbsp&nbsp
+				<img src="img2.jpg" width="300" height="200" class="img">&nbsp&nbsp
+				<img src="img5.jpg" width="300" height="200" class="img"><br><br>
+				<img src="img7.jpg" width="300" height="200" class="img">&nbsp&nbsp
+				<img src="img3.jpg"width="300" height="200" class="img">&nbsp&nbsp
+				<img src="img4.jpg" width="300" height="200" class="img"></center></section>
+		<br>
+		<br>
+		<section id="pro">
+			<hr width="80%">
+		<center>
+		<h2><i>I've done,</i></h2>
+		<div class="pro1">
+			<br>
+			<h2 style="font-family:lucida handwriting;">Online Voting System</h2>
+			<p style="color:lightyellow;"><i>This project which is done for the department association in college<br> to get votes from the student for giving position for the student as office bearers such as <br>President, Vice-president, Secretary, Joint Secretary and Tresurer.</i></p>
+		</div>
+		<br>
+		<br>
+		<div class="pro2">
+			<br>
+			<h2 style="font-family:lucida handwriting;">Powerloom management System</h2>
+			<p style="color:lightyellow;"><i>This project which is done for the weavers to maintain their details of customer, <br>orders given by the customer, materials required for the order, calculating the expenses &<br> balance orders in stock.
+		And enables to update/alter the details when it becomes wrong.</i></p>
+		</div>
+	</div></center></section>
+	<br>
+	<br>
+	<section id="in">
+	<div class="int">
+		<center><hr width="80%">
+		<h2><i>I'm Interested in,</i></h2>
+		<p><i><b style="background-color: grey; border-radius: 5px; padding:10px;">Frontend Web Development</b> &nbsp&nbsp&nbsp& &nbsp&nbsp&nbsp <b style="background-color: grey; border-radius: 5px;  padding:10px;">Tailoring</b></i></p>
+		<br>
+		<p style="color:red"><i><b>"Be open to the amazing changes which are occuring in the field that interest you."</b></i></p>
+		<p><i>-Leigh Steinberg</i></p>
+		</div>
+	</div></center></div></section>
+	<br>
+	<section id="cu">
+	<div class="footer">
+		<footer>
+			<center>
+			<h2 style="font-family:lucida handwriting; color: yellow;"><u>Find me on,</u></h2>
+			<p><i>2/361, Bethel Prayer House,<br>Kanjampatti(PO),Pollachi,<br>Coimbatore,Tamil Nadu,<br>India-642003. </i></p>
+			<hr width="40%">
+			<p><i>Phone no: 9677967091 & 8248610165</i></p>
+			<p><i><img src="wp.png" width="20" height="20"> &nbsp9677967091</i></p>
+			<hr width="40%">
+			<a href="https://www.instagram.com/sweetie_whitemark/?igshid=Mzc0YWU1OWY%3D"><img src="in.png" width="20" height="20"></a>&nbsp<a href="https://github.com/Yaxshapaul5"><img src="git.png" width="20" height="20"></a>&nbsp<a href="https://www.linkedin.com/in/yaxshapraba-p-587645222"><img src="li.png" width="20" height="20"></a>
+			</center>
+		</footer>
+		
+	</div></section>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>
